@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "./Item";
 
-function ShoppingList({ items }) {
+function ShoppingList({ items, addToCart, removeFromCart }) {
   return (
     <div className="ShoppingList">
       <div className="Filter">
