@@ -14,7 +14,11 @@ function ShoppingList({ items, addToCart, removeFromCart }) {
       </div>
       <ul className="Items">
         {items.map((item) => (
-          <Item key={item.id} name={item.name} category={item.category} />
+          <Item key={item.id} 
+          name={item.name} 
+          category={item.category}  
+          addToCart={addToCart}
+          removeFromCart={removeFromCart} />
         ))}
       </ul>
     </div>

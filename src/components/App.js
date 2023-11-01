@@ -32,7 +32,7 @@ function App() {
         <button onClick = {toggleDarkMode}>Dark Mode</button>
       </header>
       <Item addToCart={addToCart} removeFromCart={removeFromCart} />
-      <ShoppingList items={itemData} />
+      <ShoppingList items={itemData} addToCart={addToCart} />
     </div>
   );
 }
